@@ -63,85 +63,100 @@
             <legend>Formulario de registro</legend>
 
             <form action="http://127.0.0.1:5500/aweb.4.cursos/RecibirDatos" method="post">
-              <ul style="list-style: none;">
-                <li>
-                  <label for="nombre"> Nombre: </label>
-                  <input type="text" name="nombre" id="nombre">
-                </li>
-                <li>
+              
+              <div class="form-group">
+                <label for="nombre"> Nombre: </label>
+                <input class="form-control" type="text" name="nombre" id="nombre">
+              </div>
+
+              <div class="form-group">
                 <label for="primerApellido"> Primer Apellido: </label>
-                <input type="text" name="primerApellido" id="primerApellido">
-                </li>
-                <li>
-                  <label for="SegundoApellido"> SegundoApellido: </label>
-                  <input type="text" name="SegundoApellido" id="SegundoApellido">
-                </li>
-                <li>
-
-                  <label for="#">Tipo de Modalidad: </label>
+                <input class="form-control" type="text" name="primerApellido" id="primerApellido">
+              </div>
 
 
-                  <input type="checkbox" id="presencial" value="Presencial">
-                  <label for="presencial">Presencial</label>
+              <div class="form-group">
+                <label for="SegundoApellido"> Segundo Apellido: </label>
+                <input type="text" class="form-control" name="SegundoApellido" id="SegundoApellido">
+              </div>
 
-                  <input type="checkbox" id="remoto" value="Remoto">
-                  <label for="remoto">Remoto</label>
+              <div class="form-group">
+                <label class="form-check-label" for="#">Tipo de Modalidad: </label>
 
-                  <input type="checkbox" id="mixto" value="Mixto">
-                  <label for="mixto">Mixto</label>
-                </li>
+                <div class="form check">
 
-                <li>
+                  <input  class="form-check-input"  type="checkbox" id="presencial" value="Presencial">
+                  <label class="form-check-label" for="presencial">Presencial</label>
 
-                  <label for="#">Sexo: </label>
+                </div>
 
-                  <input type="radio" name="sexo" id="mujer "value="mujer">
-                  <label for="mujer">Mujer</label>
+                <div class="form check">
 
-                  <input type="radio" name="sexo" id="hombre "value="hombre">
-                  <label for="hombre">Hombre</label>
-                </li>
+                  <input class="form-check-input" type="checkbox" id="remoto" value="Remoto">
+                  <label class="form-check-label" for="remoto">Remoto</label>
 
-                <li>
+                </div>
 
-                  <label for="curso">Curso: </label>
-                  <select name="curso" id="curso">
+                <div class="form check">
 
-                    <option value="0">Seleccione...</option>
-                    <option value="1">Creatividad y diseño</option>
-                    <option value="2">Database Systems</option>
-                    <option value="3">Desarrollo móvil android</option>
-                    <option value="4">Finanzas</option>
-                  </select>
-                </li>
+                  <input class="form-check-input" type="checkbox" id="mixto" value="Mixto">
+                  <label class="form-check-label" for="mixto">Mixto</label>
 
-               
+                </div>
+              </div>
 
-                <li>
 
-                  <label for="curso">Observaciones: </label>
-                  <br>
+              <div class="form-group">
+                <label class="form-check-label" for="#">Sexo: </label>
+
+                <div class="form radius">
+                  <input class="form-check-radius" type="radio" name="sexo" id="mujer "value="mujer">
+                  <label class="form-check-label" for="mujer">Mujer</label>
+
+                </div>
+
+                <div class="form radius">
+                  <input class="form-check-radius" type="radio" name="sexo" id="hombre "value="hombre">
+                  <label class="form-check-label" for="mujer">Hombre</label>
+
+                </div>
+
+              </div>
+
+
+              <div class="form-group">
+                
+                <label class="form-check-label" for="curso">Curso: </label>
+
+                <div class="form-select">
+                <select name="curso" id="curso form-check-select">
+                  <option value="0">Seleccione...</option>
+                  <option value="1">Creatividad y diseño</option>
+                  <option value="2">Database Systems</option>
+                  <option value="3">Desarrollo móvil android</option>
+                  <option value="4">Finanzas</option>
+                </select>
+              </div>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="curso">Observaciones: </label>
+                <br>
+                <div class="form-textarea">
                   <textarea style="resize: none; "name="observaciones" id="observaciones" cols="60" rows="10">
-                </textarea>
-                </li>
-
-                <li>
-                  <input type="submit" value="Registrar" name="registrar" id="registrar">
-                  <input type="reset" value="Cancelar" name="reset" id="reset">
-                </li>
+                  </textarea>
+                </div>
+              </div>
 
 
+              <div class="form-group">
 
+                <input class="form-check-button" type="submit" value="Registrar" name="registrar" id="registrar">
+                <input class="form-check-button" type="reset" value="Cancelar" name="reset" id="reset">
 
-
-              </ul>
-
-            </form>
-
-          </fieldset>
-
-        </div>
-
+              </div>
 
 
 
